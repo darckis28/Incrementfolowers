@@ -12,6 +12,7 @@ body{
     align-items: center;
     height: 100vh;
     font-family: 'Roboto Mono', sans-serif;
+    overflow: hidden;
 }
 .container{
     display: flex;
@@ -25,5 +26,15 @@ body{
         .followers{
             font-size: 4em;
         }
+    }
+}
+@media (min-width:0) {
+    .container{
+        flex-direction: column;
+    }
+}
+@media (min-width:450px) {
+    .container{
+        flex-direction: row;
     }
 }
